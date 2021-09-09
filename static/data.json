@@ -1,0 +1,84 @@
+{
+    "books": {
+        "title": "Books",
+        "goods": [
+            {
+                "title": "War and peace",
+                "author": "Leo Tolstoy",
+                "genre": "classic",
+                "description": "Some interesting description",
+                "idProduct": 0,
+                "price": 200,
+                "image": "/book.png"
+            },
+            {
+                "title": "The Great Gatsby", 
+                "author": "F. Scott Fitzgerald",
+                "genre": "classic",
+                "description": "Some interesting description",
+                "idProduct": 1,
+                "price": 220,
+                "image": "/book.png"
+            },
+            {
+                "title": "The Three Musketeers",
+                "author": "Alexandre Dumas",
+                "genre": "adventure",
+                "description": "Some interesting description",
+                "idProduct": 2,
+                "price": 300,
+                "image": "/book.png"
+            },
+            {
+                "title": "Treasure Island",
+                "author": "R. Louis Stevenson",
+                "genre": "adventure",
+                "description": "Some interesting description",
+                "idProduct": 3,
+                "price": 150,
+                "image": "/book.png"
+            }
+        ]
+    },
+    "phones": {
+        "title": "Phones",
+        "goods": [
+            {
+                "title": "Samsung",
+                "type": "android",
+                "year": 2020,
+                "description": "Some interesting description",
+                "idProduct": 0,
+                "price": 350,
+                "image": "/phone.png"
+            },
+            {
+                "title": "Xiaomi",
+                "type": "android",
+                "year": 2020,
+                "description": "Some interesting description",
+                "idProduct": 1,
+                "price": 300,
+                "image": "/phone.png"
+            },
+            {
+                "title": "iPhone",
+                "type": "iphone",
+                "year": 2019,
+                "description": "Some interesting description",
+                "idProduct": 2,
+                "price": 600,
+                "image": "/phone.png"
+            },
+            {
+                "title": "iPhone New",
+                "type": "iphone",
+                "year": 2021,
+                "description": "Some interesting description",
+                "idProduct": 3,
+                "price": 400,
+                "image": "/phone.png"
+            }
+        ]
+    }
+}
