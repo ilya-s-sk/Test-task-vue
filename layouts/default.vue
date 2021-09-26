@@ -1,6 +1,5 @@
 <template>
     <div>
-        <CategoriesList/>
         <main>
             <div class="container">
                 <nuxt />
@@ -11,14 +10,7 @@
 </template>
 
 <script>
-import CategoriesList from '@/components/CategoriesList'
-export default {
-    components: {
-        CategoriesList
-    }
-}
+
 </script>
 
-<style>
-
-</style>
+<style></style>
