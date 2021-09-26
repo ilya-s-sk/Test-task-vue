@@ -13,21 +13,21 @@ export default {
         return {
             products: [
                 {
-                    name: 'Наименование товара',
+                    name: 'aНаименование товара',
                     price: '10000',
                     description: 'Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк.',
                     imageUrl: 'img.png',
                     id: 1
                 },
                 {
-                    name: 'Наименование товара',
-                    price: '10000',
+                    name: 'дНаименование товара',
+                    price: '15000',
                     description: 'Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк.',
                      imageUrl: 'img.png',
                     id: 2
                 },
                 {
-                    name: 'Наименование товара',
+                    name: 'бНаименование товара',
                     price: '10000',
                     description: 'Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк.',
                      imageUrl: 'img.png',
@@ -83,7 +83,7 @@ export default {
                 case 'priceMax':
                     return this.products.sort((a, b) => b.price - a.price);
                 case 'name':
-                    return this.products.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase())
+                    return this.products.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
             }
         },
         onSelectChange(selectedSortFilter) {
