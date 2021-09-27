@@ -34,7 +34,8 @@
 
             <button type="submit" 
                     class="add-product__form__submit"
-                    :class="{active: isReadyToSubmit}">Добавить товар</button>
+                    :class="{active: isReadyToSubmit}"
+                    :disabled="!isReadyToSubmit">Добавить товар</button>
         </form> 
     </div>
 </template>
@@ -51,9 +52,6 @@ export default {
     },
     methods: {
         onSubmit() {
-            if (!(this.name && this.imageUrl && this.price)) {
-                return
-            }
             const product = {
                 name: this.name,
                 description: this.description,
@@ -78,7 +76,7 @@ export default {
     },
     computed: {
         isReadyToSubmit() {
-            return this.name && this.imageUrl && this.price ? true : false
+            return this.name && this.imageUrl && this.price
         }
     },
     watch: {
